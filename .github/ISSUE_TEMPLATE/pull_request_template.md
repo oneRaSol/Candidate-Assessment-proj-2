@@ -17,9 +17,14 @@ _Add more context to describe the changes.
 
 ### Checklist
 
-[ ] Developer's comments
+[ ] Developers documentation
 [ ] Quality Assurance  Approval
 [ ] Admin approved changes
 [ ] Stakeholder Approval
 
 @developer-John Bonnett-project-2
+
+# Screen shots
+
+Original          |       Updated
+:-----------------------: | :-------------------::bulb:
