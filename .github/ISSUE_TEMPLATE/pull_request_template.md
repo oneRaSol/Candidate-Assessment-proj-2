@@ -1,12 +1,25 @@
-### summary:
+### summary
+
+ _Proposed changes
  _Provide an overview
 
-### Details:
+### Details
+
+_Related issues
 _Add more context to describe the changes.
 
-### References:
-[Website] (www.google.com)
+### References
 
-### Checks:
-[ ] Tested changes
-[ ] Stakeholder  Approval
+ _Additional info
+
+[Angular - Website] (<https://angular.io/>)
+[Node] (<https://nodejs.org/en/docs/guides/>)
+
+### Checklist
+
+[ ] Developer's comments
+[ ] Quality Assurance  Approval
+[ ] Admin approved changes
+[ ] Stakeholder Approval
+
+@developer-John Bonnett-project-2
