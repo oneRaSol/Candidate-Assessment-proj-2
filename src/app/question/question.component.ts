@@ -2,6 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
 import { QuestionService } from '../services/question.service';
 
+/**
+ * debug for ngStyles
+ */
+
+// ! Must be fixed soon.
 
 @Component({
   selector: 'app-question',
