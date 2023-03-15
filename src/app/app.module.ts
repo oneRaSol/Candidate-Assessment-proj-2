@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { QuestionComponent } from './question/question.component';
 import { WelcomeComponent } from './welcome/welcome.component';
+import { LoginComponent } from './login/login.component';
+import { SignupComponent } from './signup/signup.component';
+import { ResultsComponent } from './results/results.component';
 
 
 @NgModule({
@@ -19,7 +22,10 @@ import { WelcomeComponent } from './welcome/welcome.component';
     FooterComponent,
     WelcomeComponent,
     QuestionComponent,
-    ChangeBgDirective
+    ChangeBgDirective,
+    LoginComponent,
+    SignupComponent,
+    ResultsComponent
   ],
   imports: [
     BrowserModule,
