@@ -1,4 +1,6 @@
-import { Component } from '@angular/core';
+import { HttpClient } from '@angular/common/http';
+import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
+import { FormBuilder, FormGroup } from '@angular/forms';
 
 @Component({
   selector: 'app-footer',
@@ -6,5 +8,33 @@ import { Component } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
+
+  title = 'fileUpload';
+  images: any = '';
+  multipleImages = [];
+
+  constructor(private http: HttpClient){}
+/**
+ *Upload resume
+*/
+
+    onSubmit(){
+      const formData = new FormData();
+      formData.append('file', this.images);
+
+      this.http.post<any>('http://localhost:3000/file', formData).subscribe(
+        (res) => console.log(res),
+        (err) => console.log(err)
+      );
+    }
+  selectImage(event) {
+    if (event.target.files.length > 0) {
+      const file = event.target.files[0];
+      this.images = file;
+    }
+  }
+
+
+
 
 }
