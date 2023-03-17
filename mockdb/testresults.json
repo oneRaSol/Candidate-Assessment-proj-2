@@ -16,14 +16,20 @@
   "profile": {
     "name": "typicode"
   },
-    "results": [
+  "results": [
     {
-      "name": "",
-      "correctAnswer": "",
-      "inCorrectAnswer": "",
-      "points": "",
-      "currentQuestion": ""
+      "id": 1,
+      "name": "rasol",
+      "correctAnswer": 9,
+      "inCorrectAnswer": 0,
+      "points": 90,
+      "currentQuestion": 8
+    },
+    {
+      "id": 2
+    },
+    {
+      "id": 3
     }
-
   ]
 }

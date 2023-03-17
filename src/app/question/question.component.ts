@@ -1,4 +1,5 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
+//import {RequestOptions, Request, RequestMethod} from '@angular/http';
 import { Component, OnInit } from '@angular/core';
 import { interval } from 'rxjs';
 import { QuestionService } from '../services/question.service';
@@ -15,6 +16,7 @@ export class QuestionComponent implements OnInit {
   public questionList: any = [];
   public currentQuestion: number = 0;
   public points: number = 0;
+  public id: number = 0;
   counter = 60;
   correctAnswer: number = 0;
   inCorrectAnswer: number = 0;
@@ -46,17 +48,47 @@ export class QuestionComponent implements OnInit {
       this.isQuizCompleted = true;
 
       if (this.isQuizCompleted = true) {
-      const obj = {
-        fname: this.name,
-        currentQuestion: this.currentQuestion,
-        points: this.points,
-        inCorrectAnswer: this.inCorrectAnswer,
-        CorrectAnswer: this.correctAnswer
-};
-    this._http.post<any>("http://localhost:3000/results", obj)
+
+        interface results {
+            id: number,
+            name: string;
+            CorrectAnswer: number,
+            inCorrectAnswer: number,
+            points: number,
+            currentQuestion: number
+        }
+
+        const obj = {
+          id: this.id,
+          name: this.name,
+          CorrectAnswer: this.correctAnswer,
+          inCorrectAnswer: this.inCorrectAnswer,
+          points: this.points,
+          currentQuestion: this.currentQuestion
+  };
 
 
-      }
+        let body = JSON.stringify(obj);
+        // const headers = new HttpHeaders({
+        //       'Content-Type':'application/json; charset=utf-8',
+        //     });
+      const httpOptions : Object = {
+        headers: new HttpHeaders({
+          'Accept': 'text/html',
+          'Content-Type': 'text/plain; charset=utf-8'
+        }),
+       responseType: 'text' as 'json'
+      };
+
+          //const requestOptions = { headers: headers };
+
+            this._http.post("http://localhost:3000/results",body, httpOptions)
+                  .subscribe((res: any) => {
+                  alert('data added successfully');
+              }, err=>{
+                alert('Something went wrong');
+              })}
+
 
       this.stopCounter();
     }
