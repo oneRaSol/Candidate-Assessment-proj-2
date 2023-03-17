@@ -14,10 +14,16 @@ export class WelcomeComponent implements OnInit {
   images: any = '';
   multipleImages = [];
 
+  //user taking the quiz
+  candidate = localStorage.getItem('name');
+
+
   @ViewChild('name') nameKey!: ElementRef;
   constructor(private http: HttpClient){}
 
   ngOnInit(): void {
+
+
   }
 
  /**
@@ -40,14 +46,5 @@ export class WelcomeComponent implements OnInit {
         (err) => console.log(err)
       );
     }
-  selectMultipleImage(event){
-    if (event.target.files.length > 0) {
-      this.multipleImages = event.target.files;
-    }
-  }
-
-
-
-
 
 }

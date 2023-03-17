@@ -24,13 +24,11 @@ export class LoginComponent implements OnInit {
 
   constructor(private _http:HttpClient, private _route:Router) { }
 
-​
-
   ngOnInit(): void {
 
     this.login = new FormGroup({
 
-      'fname': new FormControl(),
+      'email': new FormControl(),
 
       'password': new FormControl()
 
@@ -48,31 +46,32 @@ export class LoginComponent implements OnInit {
 
       const user = res.find((a:any)=>{
 
-        return a.fname === this.login.value.fname && a.password === this.login.value.password
+        return a.email === this.login.value.email && a.password === this.login.value.password
 
       });
 
-​
 
       if(user){
 
         alert('you are successfully login');
 
         this.login.reset();
-
+        //this._route.navigate(['/', 'welcome'])
+        //localStorage.setItem('name', value);
+        this.goQuiz();
+      }else{
         $('.form-box').css('display','none');
 
-        this._route.navigate(['dashboard']);
+        //this._route.navigate(['welcome']);
 
-      }else{
+
+
 
         alert('User Not Found');
 
         this._route.navigate(['login']);
 
       }
-
-​
 
     }, err=>{
 
@@ -81,6 +80,16 @@ export class LoginComponent implements OnInit {
     })
 
   }
+
+
+goQuiz() {
+  this._route.navigate(['/', 'welcome'])
+    .then(nav => {
+      console.log(nav); // true if navigation is successful
+    }, err => {
+      console.log(err) // when there's an error
+    });
+}
 
   sbtn1(){
 

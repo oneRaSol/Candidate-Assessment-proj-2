@@ -8,7 +8,6 @@ import { Router } from '@angular/router';
 
 declare var $:any;
 
-​
 
 @Component({
 
@@ -21,8 +20,6 @@ declare var $:any;
 })
 
 export class SignupComponent implements OnInit {
-
-​
 
   constructor( private _route:Router, private _http:HttpClient) { }
 
@@ -48,8 +45,6 @@ export class SignupComponent implements OnInit {
 
   }
 
-​
-
   signupdata(singup:FormGroup){
 
     console.log(this.signup.value);
@@ -62,6 +57,7 @@ export class SignupComponent implements OnInit {
 
       alert('data added successfully');
 
+      localStorage.setItem('name', this.signuser);
       this.signup.reset();
 
       this._route.navigate(['login']);
@@ -93,5 +89,3 @@ export class SignupComponent implements OnInit {
   }
 
 }
-
-​
