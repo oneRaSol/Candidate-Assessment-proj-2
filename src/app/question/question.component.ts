@@ -46,6 +46,8 @@ export class QuestionComponent implements OnInit {
 
     if(currentQno === this.questionList.length){
       this.isQuizCompleted = true;
+      
+      // check this routine to sulv the bug with post request.
 
       if (this.isQuizCompleted = true) {
 
