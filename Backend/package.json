@@ -1,12 +1,12 @@
 {
   "name": "fileuploader",
   "version": "1.0.0",
-  "description": "",
+  "description": "Candidate Assessment application",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Fun Of Heuristic",
+  "author": "John Bonnett",
   "license": "ISC",
   "dependencies": {
     "body-parser": "^1.19.0",
