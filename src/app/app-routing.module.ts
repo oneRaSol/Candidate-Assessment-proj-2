@@ -1,9 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { QuestionComponent } from './question/question.component';
-import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
+import { QuestionComponent } from './question/question.component';
+import { ResultsComponent } from './results/results.component';
 import { SignupComponent } from './signup/signup.component';
+import { WelcomeComponent } from './welcome/welcome.component';
 
 
 const routes: Routes = [
@@ -11,6 +12,8 @@ const routes: Routes = [
   {path:"welcome", component:WelcomeComponent},
   {path:"question", component:QuestionComponent},{path:'login',component:LoginComponent},
   {path:'signup',component:SignupComponent},
+  {path:'results',component:ResultsComponent},
+
 ];
 
 @NgModule({
