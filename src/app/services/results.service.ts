@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Users } from '../Users';
+import { quiz } from '../quiz';
 
 @Injectable({
   providedIn: 'root'
@@ -9,11 +9,11 @@ export class ResultsService {
 
   constructor(private http : HttpClient) { }
 
-  url : string  = "http://localhost:3000/Users";
+  url : string  = "http://localhost:3000/results";
 
   getUsers()
   {
-    return this.http.get<Users[]>(this.url);
+    return this.http.get<quiz[]>(this.url);
   }
 
 

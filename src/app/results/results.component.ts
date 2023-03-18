@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { quiz } from '../quiz';
 import { ResultsService } from '../services/results.service';
-import { Users } from '../Users';
 
 @Component({
   selector: 'app-results',
@@ -13,18 +13,18 @@ export class ResultsComponent implements OnInit {
 
   constructor(private rs : ResultsService){}
 
-  columns = ["User Id", "First Name", "Last Name", "Email", "Mobile", "Salary"];
+  columns = ["Std Id","FirstName", "Correct Answers", "Incorrect Answers", "Questions Answered", "Points"];
 
-  index = ["id", "firstName", "lastName", "email", "mobile", "salary"];
+  index = ["id", "name", "correctAnswer", "inCorrectAnswer", "currentQuestion", "points"];
 
-  users : Users[] = [];
+  quizs : quiz[] = [];
 
   ngOnInit(): void {
     this.rs.getUsers().subscribe
     (
       (response)=>
       {
-        this.users = response;
+        this.quizs = response;
       },
 
       (error)=>
