@@ -9,7 +9,7 @@ export class ResultsService {
 
   constructor(private http : HttpClient) { }
 
-  url : string  = "http://localhost:3000/results";
+  url : string  = "http://localhost:4000/results";
 
   getUsers()
   {

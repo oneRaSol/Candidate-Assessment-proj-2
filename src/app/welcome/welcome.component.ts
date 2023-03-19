@@ -1,6 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import { FormBuilder, FormGroup } from '@angular/forms';
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -19,11 +20,17 @@ export class WelcomeComponent implements OnInit {
 
 
   @ViewChild('name') nameKey!: ElementRef;
-  constructor(private http: HttpClient){}
+  constructor(private http: HttpClient, private _route:Router){}
+
+
 
   ngOnInit(): void {
+        let staff = localStorage.getItem('name');
 
+      if(staff === 'admin'){
 
+         this.goResults();
+      }
   }
 
  /**
@@ -46,5 +53,16 @@ export class WelcomeComponent implements OnInit {
         (err) => console.log(err)
       );
     }
+
+
+goResults() {
+  this._route.navigate(['/', 'results'])
+    .then(nav => {
+      console.log(nav); // true if navigation is successful
+    }, err => {
+      console.log(err) // when there's an error
+    });
+}
+
 
 }

@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { quiz } from '../quiz';
 import { ResultsService } from '../services/results.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-results',
@@ -11,7 +12,7 @@ export class ResultsComponent implements OnInit {
 
   title = 'Admin candidate quiz report';
 
-  constructor(private rs : ResultsService){}
+  constructor(private rs : ResultsService, private _route:Router){}
 
   columns = ["Std Id","FirstName", "Correct Answers", "Incorrect Answers", "Questions Answered", "Points"];
 
@@ -20,6 +21,15 @@ export class ResultsComponent implements OnInit {
   quizs : quiz[] = [];
 
   ngOnInit(): void {
+
+       let staff = localStorage.getItem('name');
+
+      if(staff != 'admin'){
+
+         this.goLogin();
+      }
+
+
     this.rs.getUsers().subscribe
     (
       (response)=>
@@ -33,6 +43,16 @@ export class ResultsComponent implements OnInit {
       }
     )
   }
+
+  goLogin() {
+  this._route.navigate(['/', 'login'])
+    .then(nav => {
+      console.log(nav); // true if navigation is successful
+    }, err => {
+      console.log(err) // when there's an error
+    });
+}
+
 
 
 }

@@ -42,8 +42,23 @@ export class SignupComponent implements OnInit {
       'password': new FormControl()
 
     })
+       //let staff = localStorage.getItem('name');
+
+      if(localStorage.getItem('name')){
+
+         this.goQuiz();
+      }
 
   }
+
+  goQuiz() {
+  this._route.navigate(['/', 'welcome'])
+    .then(nav => {
+      console.log(nav); // true if navigation is successful
+    }, err => {
+      console.log(err) // when there's an error
+    });
+}
 
   signupdata(singup:FormGroup){
 

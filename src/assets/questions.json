@@ -160,6 +160,97 @@
                 }
             ],
             "explanation": "this.propertyName is the way to access a specific property within a class"
+        },
+        {
+            "questionText": "What is a correct JavaScript Data Type?",
+            "options": [{
+                    "text": "Object",
+                    "correct": true
+                },
+                {
+                    "text": "Text"
+                },
+                {
+                    "text": "True"
+                },
+                {
+                    "text": "Class"
+                }
+            ],
+            "explanation": "Javascript is all about objects"
+        },
+        {
+            "questionText": "What property do you use to create spacing between HTML elements?",
+            "options": [{
+                    "text": "margin",
+                    "correct": true
+                },
+                {
+                    "text": "spacing"
+                },
+                {
+                    "text": "padding"
+                },
+                {
+                    "text": "border"
+                }
+            ],
+            "explanation": "margin is  used to create spacing between HTML elements"
+        },
+        {
+            "questionText": "What is the property used to set the class’s text color?",
+            "options": [{
+                    "text": "color",
+                    "correct": true
+                },
+                {
+                    "text": "text-color"
+                },
+                {
+                    "text": "text-background"
+                },
+                {
+                    "text": "text"
+                }
+            ],
+            "explanation": "color is the property used to set the class’s text color"
+        },
+        {
+            "questionText": "The acronym CSS stands for what?",
+            "options": [{
+                    "text": "Cascading Style Sheets",
+                    "correct": true
+                },
+                {
+                    "text": "Carrot Sytem Style"
+                },
+                {
+                    "text": "Correlated Styling System"
+                },
+                {
+                    "text": "Canvas Styling System"
+                }
+            ],
+            "explanation": "Cascading Style is the acronym  for CSS"
+        },
+        {
+            "questionText": "In what way can you NOT reference CSS?",
+            "options": [{
+                    "text": "All three are correct",
+                    "correct": true
+                },
+                {
+                    "text": "External Style Sheet"
+                },
+                {
+                    "text": "Internal Style Sheet"
+                },
+                {
+                    "text": "Inline Styling"
+                }
+            ],
+            "explanation": "All three are correct to reference CSS"
         }
+
     ]
 }

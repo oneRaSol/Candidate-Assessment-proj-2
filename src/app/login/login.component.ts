@@ -56,16 +56,12 @@ export class LoginComponent implements OnInit {
         alert('you are successfully login');
 
         this.login.reset();
-        //this._route.navigate(['/', 'welcome'])
-        //localStorage.setItem('name', value);
+
+        const staff = localStorage.getItem('name');
+
         this.goQuiz();
       }else{
         $('.form-box').css('display','none');
-
-        //this._route.navigate(['welcome']);
-
-
-
 
         alert('User Not Found');
 
@@ -90,6 +86,9 @@ goQuiz() {
       console.log(err) // when there's an error
     });
 }
+
+
+
 
   sbtn1(){
 
