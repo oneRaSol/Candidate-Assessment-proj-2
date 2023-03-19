@@ -6,9 +6,9 @@
 
 ### Course-end Project 2
 
-This is a Full Stack Website Development project. Developing an online quiz application in order to help the recruitment team take online tests of the candidates coming for interviews.
+This is a Full Stack Website Development project. Developing an **online quiz application** in order to help the recruitment team take online tests of the candidates coming for interviews.
 
-- The tools used for development are: ```Visual Studio Code```,```.Bootstrap 5.0```, ```HTML/CSS```, ```.Javascript``` ```.Github``` ```.Github Project Manager```, ```NodeJS```, ```Json-server```
+- **The tools used for development are:** ```Visual Studio Code```,```.Bootstrap 5.0```, ```HTML/CSS```, ```.Javascript``` ```.Github``` ```.Github Project Manager```, ```NodeJS```, ```Json-server```
 
 **Required commands to run this app:**
 
@@ -18,7 +18,7 @@ This is a Full Stack Website Development project. Developing an online quiz appl
   > 4. json-server --watch src/assets/auth.json
   > 5. **Backend for resume file-upload** -----  node app.js
 
-**REQUIRED OBJECTIVES TO BE MET:**
+**REQUIRED OBJECTIVES MET:**
 
   > 1. The source codes is tracked on this GitHub repositories.
   > 2. The tracked files are ignored during the pushes to my GitHub repository in order to track the tasks.
@@ -38,7 +38,7 @@ This is a Full Stack Website Development project. Developing an online quiz appl
 
 # Gathering stage
 
- The features for the app has been decided to allow the user to sign-up and login to the app before starting the Quiz. The results will be shown to them once completed. Candidates are also be encouraged to upload their resume for review. Therefore an executable platform is used for 1.: Http request for storage of data and retrieval 2.: for the uploading of files to a server folder.
+ The features for the app has been decided to allow the user to sign-up and login to the app before starting the Quiz. The results will be shown to them once completed. Candidates are also be encouraged to upload their resume for review. Therefore an executable platform is used for **1.:** Http request for storage of data and retrieval **2.:** for the uploading of files to a server folder.
 
 ## Issue left to be resolved
 
