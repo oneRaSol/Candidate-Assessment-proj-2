@@ -16,7 +16,7 @@ This is a Full Stack Website Development project. Developing an online quiz appl
   > 2. ng serve.
   > 3. json-server --watch mockdb/testresults.json  --port 4000.
   > 4. json-server --watch src/assets/auth.json
-  > 5. Backend for resume upload -----  node app.js
+  > 5. **Backend for resume file-upload** -----  node app.js
 
 **REQUIRED OBJECTIVES TO BE MET:**
 
@@ -49,7 +49,7 @@ This is a Full Stack Website Development project. Developing an online quiz appl
 
 - **Json-server**, A pull request is outstanding regarding this issue created to resolver the posting of the test results to a data set.<!--START_SECTION:waka-->
 
-- **PWA**, I Will apply this PWA after project is submitted due to time constraints.
+- **👉 PWA**, I Will apply this PWA after project is submitted due to time constraints.
 
 ---
 
