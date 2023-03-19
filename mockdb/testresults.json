@@ -19,47 +19,47 @@
   "results": [
     {
       "id": 1,
-      "name": "rasol",
+      "name": "Peter",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 100,
       "currentQuestion": 8
     },
     {
       "id":2,
-      "name": "rasol",
+      "name": "John",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 70,
       "currentQuestion": 8
     },
     {
       "id": 3,
-      "name": "rasol",
+      "name": "Mary",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 70,
       "currentQuestion": 8
     },
     {
           "id": 4,
-      "name": "rasol",
+      "name": "Chris",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 80,
       "currentQuestion": 8
     },
     {
       "id": 5,
-      "name": "rasol",
+      "name": "Jenny",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 110,
       "currentQuestion": 8
     },
     {
       "id": 6,
-      "name": "rasol",
+      "name": "Ralph",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
       "points": 90,
@@ -67,7 +67,7 @@
     },
     {
       "id": 7,
-      "name": "rasol",
+      "name": "Pamela",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
       "points": 90,
@@ -75,31 +75,31 @@
     },
     {
       "id": 8,
-      "name": "rasol",
+      "name": "Wendy",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 120,
       "currentQuestion": 8
     },
     {
       "id": 9,
-      "name": "rasol",
+      "name": "Andrew",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 70,
       "currentQuestion": 8
     },
     {
      "id": 10,
-      "name": "rasol",
+      "name": "Dennis",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 80,
       "currentQuestion": 8
     },
     {
       "id": 11,
-      "name": "rasol",
+      "name": "Hope",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
       "points": 90,
@@ -107,10 +107,10 @@
     },
     {
       "id": 12,
-      "name": "rasol",
+      "name": "Shelly",
       "correctAnswer": 9,
       "inCorrectAnswer": 0,
-      "points": 90,
+      "points": 110,
       "currentQuestion": 8
     }
   ]
