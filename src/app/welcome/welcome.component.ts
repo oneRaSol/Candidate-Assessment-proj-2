@@ -25,19 +25,22 @@ export class WelcomeComponent implements OnInit {
 
 
   ngOnInit(): void {
-        let staff = localStorage.getItem('name');
 
-      if(staff === 'admin'){
 
-         this.goResults();
+      let loggedin = localStorage.getItem('name');
+
+      if(loggedin === 'admin'){
+
+         localStorage.setItem('auth', 'true');
       }
   }
 
  /**
-  *The quiz
+  *The quiz begins
  */
     startQuiz(){
       localStorage.setItem("name",this.nameKey.nativeElement.value);
+      this.nameKey.nativeElement.value = '';
     }
 
 /**

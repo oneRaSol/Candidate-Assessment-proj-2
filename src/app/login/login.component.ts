@@ -57,7 +57,7 @@ export class LoginComponent implements OnInit {
 
         this.login.reset();
 
-        const staff = localStorage.getItem('name');
+        //const staff = localStorage.getItem('name');
 
         this.goQuiz();
       }else{

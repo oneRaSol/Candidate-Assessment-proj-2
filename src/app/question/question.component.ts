@@ -44,12 +44,18 @@ export class QuestionComponent implements OnInit {
   }
   answer(currentQno: number, option: any) {
 
+
+
     if(currentQno === this.questionList.length){
       this.isQuizCompleted = true;
 
+
+
       if (this.isQuizCompleted = true) {
 
-        interface results {
+        localStorage.removeItem("name");
+
+    interface results {
             id: number,
             name: string;
             CorrectAnswer: number,

@@ -7,20 +7,25 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
+
+
+
+  checkloggedin = localStorage.getItem('auth');
+
   constructor() { }
+
+
   ngOnInit(): void {
+
+  let checkloggedin = localStorage.getItem('auth');
+
     throw new Error('Method not implemented.');
+
+
   }
 
-//   ngOnInit(): void {
-//   }
 
-//   loginClick= function () {
-//         this.router.navigateByUrl('/login');
-// };
 
-//   signupClick= function () {
-//         this.router.navigateByUrl('/signup');
-// };
+
 
 }

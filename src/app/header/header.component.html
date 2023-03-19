@@ -14,12 +14,12 @@
         </a>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li><a [routerLink]="['/results']" routerLinkActive="btn-outline-primary" class="nav-link px-2 link-secondary">Admin</a></li>
-        <li><a [routerLink]="['/']" routerLinkActive="btn-outline-primary" class="nav-link px-2 link-dark">Students</a></li>
+        <li *ngIf="checkloggedin"><a [routerLink]="['/results']" routerLinkActive="btn-outline-primary" class="nav-link px-2 link-secondary">Admin</a></li>
+        <!-- <li><a [routerLink]="['/']" routerLinkActive="btn-outline-primary" class="nav-link px-2 link-dark">Students</a></li> -->
       </ul>
 
-      <div class="col-md-3 text-end">
+      <!-- <div class="col-md-3 text-end">
         <a type="button" class="btn btn-outline-primary me-2" [routerLink]="['login']"><i class="fa fa-plus"></i> Login</a>
         <a type="button" class="btn btn-outline-primary me-2" [routerLink]="['signup']">Sign-up</a>
-      </div>
+      </div> -->
     </header>
