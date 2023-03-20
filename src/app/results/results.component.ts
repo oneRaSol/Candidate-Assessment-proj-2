@@ -3,6 +3,7 @@ import { Router } from '@angular/router';
 import { quiz } from '../quiz';
 import { ResultsService } from '../services/results.service';
 
+
 @Component({
   selector: 'app-results',
   templateUrl: './results.component.html',
@@ -14,7 +15,7 @@ export class ResultsComponent implements OnInit {
 
   constructor(private rs : ResultsService, private _route:Router){}
 
-  columns = ["Std Id","FirstName", "Correct Answers", "Incorrect Answers", "Questions Answered", "Points"];
+  columns = ["Id","FirstName", "Correct Answers", "Incorrect Answers", "Questions Answered", "Points"];
 
   index = ["id", "name", "correctAnswer", "inCorrectAnswer", "currentQuestion", "points"];
 

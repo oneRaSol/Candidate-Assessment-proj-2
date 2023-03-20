@@ -7,17 +7,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-
-
-
-  checkloggedin = localStorage.getItem('auth');
-
+  isLoggedIn:boolean = false;
   constructor() { }
 
 
   ngOnInit(): void {
 
-  let checkloggedin = localStorage.getItem('auth');
+   const checkloggedin = localStorage.getItem('name');
+
+  if (checkloggedin === 'admin') {
+      this.isLoggedIn = true;
+  }
 
     throw new Error('Method not implemented.');
 

@@ -1,20 +1,21 @@
 export class quiz
 {
-    id : string;
-    firstName : string;
-    lastName : string;
-    email : string;
-    mobile : string;
-    salary : string;
+    id : number;
+    name : string;
+    correctAnswer : number;
+    inCorrectAnswer : number;
+    currentQuestion : number;
+    points : number;
 
-    constructor(id, firstName, lastName, email, mobile, salary)
+
+    constructor(id, name, correctAnswer, currentQuestion, points)
     {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.email = email;
-        this.mobile = mobile;
-        this.salary = salary;
+        this.name = name ;
+        this.correctAnswer = correctAnswer;
+        this.inCorrectAnswer = currentQuestion;
+        this.currentQuestion = currentQuestion;
+        this.points = points;
     }
 
 }

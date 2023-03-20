@@ -74,21 +74,22 @@ export class QuestionComponent implements OnInit {
   };
 
 
-        let body = JSON.stringify(obj);
+        let body = obj;
+        // let body = JSON.stringify(obj);
         // const headers = new HttpHeaders({
         //       'Content-Type':'application/json; charset=utf-8',
         //     });
-      const httpOptions : Object = {
-        headers: new HttpHeaders({
-          'Accept': 'text/html',
-          'Content-Type': 'text/plain; charset=utf-8'
-        }),
-       responseType: 'text' as 'json'
-      };
+      // const httpOptions : Object = {
+      //   headers: new HttpHeaders({
+      //     'Accept': 'text/html',
+      //     'Content-Type': 'text/plain; charset=utf-8'
+      //   }),
+      //  responseType: 'text' as 'json'
+      // };
 
           //const requestOptions = { headers: headers };
 
-            this._http.post("http://localhost:3000/results",body, httpOptions)
+            this._http.post("http://localhost:4000/results",body)
                   .subscribe((res: any) => {
                   alert('data added successfully');
               }, err=>{
