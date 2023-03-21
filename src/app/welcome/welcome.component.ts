@@ -22,8 +22,6 @@ export class WelcomeComponent implements OnInit {
   @ViewChild('name') nameKey!: ElementRef;
   constructor(private http: HttpClient, private _route:Router){}
 
-
-
   ngOnInit(): void {
 
 

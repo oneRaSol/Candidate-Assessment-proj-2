@@ -49,6 +49,12 @@ export class SignupComponent implements OnInit {
          this.goQuiz();
       }
 
+    if(localStorage.getItem('name') === 'admin'){
+
+       localStorage.setItem('auth', 'true');
+
+      }
+
   }
 
   goQuiz() {

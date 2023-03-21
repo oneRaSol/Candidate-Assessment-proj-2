@@ -53,7 +53,7 @@ export class LoginComponent implements OnInit {
 
       if(user){
 
-        alert('you are successfully login');
+        alert('Go to quiz.');
 
         this.login.reset();
 
