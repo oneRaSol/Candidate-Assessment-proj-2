@@ -14,7 +14,7 @@
         </a>
 
       <ul class="nav col-12 col-md-auto mb-2 justify-content-center mb-md-0">
-        <li *ngIf="isLoggedIn2"><a [routerLink]="['/results']" routerLinkActive="btn-outline-primary" class="nav-link px-2 link-primary">Admin Report</a>
+        <li *ngIf="!isLoggedIn2"><a [routerLink]="['/results']" routerLinkActive="btn-outline-primary" class="nav-link px-2 link-primary">Admin Report</a>
         </li>
         <!-- <li><a [routerLink]="['/']" routerLinkActive="btn-outline-primary" class="nav-link px-2 link-dark">Students</a></li> -->
       </ul>

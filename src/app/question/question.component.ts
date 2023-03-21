@@ -54,6 +54,7 @@ export class QuestionComponent implements OnInit {
       if (this.isQuizCompleted = true) {
 
         localStorage.removeItem("name");
+        localStorage.removeItem('auth');
 
     interface results {
             id: number,
