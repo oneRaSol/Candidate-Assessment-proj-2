@@ -20,11 +20,23 @@ declare var $:any;
 
 export class LoginComponent implements OnInit {
 
+  isloggedin: boolean = false;
+
   login:FormGroup|any;
 
   constructor(private _http:HttpClient, private _route:Router) { }
 
   ngOnInit(): void {
+
+    const visitor = localStorage.getItem('name');
+
+    if (visitor !== 'admin') {
+      localStorage.setItem('visitor', 'true');
+    } else {
+      localStorage.setItem('auth', 'true');
+    }
+
+
 
     this.login = new FormGroup({
 

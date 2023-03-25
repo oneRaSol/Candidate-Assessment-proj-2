@@ -7,8 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  isLoggedIn:boolean = false;
-  isLoggedIn2:boolean = false;
+  isLoggedInAuth:boolean = false;
+  isLoggedInVisitor:boolean = false;
+
   constructor() { }
 
 
@@ -16,15 +17,15 @@ export class HeaderComponent implements OnInit {
 
   if (localStorage.getItem('auth')){
 
-      this.isLoggedIn2 = true;
+      this.isLoggedInAuth = true;
   };
 
 
 
    const checkloggedin = localStorage.getItem('name');
 
-  if (checkloggedin === 'admin') {
-      this.isLoggedIn = true;
+  if (checkloggedin !== 'admin') {
+      this.isLoggedInVisitor = true;
   }
 
     throw new Error('Method not implemented.');

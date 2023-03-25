@@ -11,12 +11,13 @@ export class FooterComponent implements OnInit {
   title = 'fileUpload';
   images: any = '';
   multipleImages = [];
-  isLoggedIn3: boolean = false;
+ isLoggedInVisitor : boolean = false;
   constructor(private http: HttpClient) {}
 
   ngOnInit(): void {
-    if (localStorage.getItem('auth')) {
-      this.isLoggedIn3 = true;
+
+    if (localStorage.getItem('name') !== 'admin') {
+      this.isLoggedInVisitor  = true;
     }
   }
 
