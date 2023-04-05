@@ -13,6 +13,7 @@ import { WelcomeComponent } from './welcome/welcome.component';
 import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { ResultsComponent } from './results/results.component';
+import { PagenotfoundComponent } from './_pagenotfound/pagenotfound.component';
 //import { ToastrService } from 'ngx-toastr';
 
 
@@ -26,7 +27,8 @@ import { ResultsComponent } from './results/results.component';
     ChangeBgDirective,
     LoginComponent,
     SignupComponent,
-    ResultsComponent
+    ResultsComponent,
+    PagenotfoundComponent
   ],
   imports: [
     BrowserModule,
