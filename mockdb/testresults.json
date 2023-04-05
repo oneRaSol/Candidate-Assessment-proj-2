@@ -152,6 +152,14 @@
       "inCorrectAnswer": 0,
       "points": 130,
       "currentQuestion": 13
+    },
+    {
+      "id": 18,
+      "name": "John",
+      "CorrectAnswer": 12,
+      "inCorrectAnswer": 1,
+      "points": 110,
+      "currentQuestion": 13
     }
   ]
 }

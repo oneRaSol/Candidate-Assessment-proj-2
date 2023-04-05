@@ -18,6 +18,8 @@ This is a Full Stack Website Development project. Developing an **online quiz ap
   > 4. json-server --watch src/assets/auth.json
   > 5. **Backend for resume file-upload** -----  node app.js
 
+  - **👉 ADMIN**, Must register using 'admin' as username..... to view Reports of the test results.. Important!
+
 **REQUIRED OBJECTIVES MET:**
 
   > 1. The source codes is tracked on this GitHub repositories.
